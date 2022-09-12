@@ -23,18 +23,20 @@ $dongchu="Xin chào";
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+  
+  <!-- <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script> -->
       <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
       <meta charset="UTF-8">
       <title>aaaa</title>
-      <link href="video-js.min.css" rel="stylesheet">
+      <link href="css/video-js.min.css" rel="stylesheet">
       <!-- <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet"> -->
-      <link rel="stylesheet" href="videojs-mobile-ui.css">
+      <link rel="stylesheet" href="css/videojs-mobile-ui.css">
+      <script src="js/srt2vtt.js"></script>
   </head> 
   <body>
   
   <div id="player"></div>
-  <script>
+  <!-- <script>
     var player = new Clappr.Player({
       source: "phim/Sonic.the.Hedgehog.2.2022.1080p.WEBRip.AAC2.0.x264-SHITBOX/Sonic.the.Hedgehog.2.2022.1080p.WEBRip.AAC2.0.x264-SHITBOX.mp4", 
       parentId: "#player",
@@ -47,13 +49,13 @@ $dongchu="Xin chào";
         }]
       }
     });
-  </script>
-<!-- <video playsinline controls="true" id="my-video" class="video-js vjs-big-play-centered" data-setup="{}">
+  </script> -->
+<video playsinline controls="true">
 <source src="phim/Sonic.the.Hedgehog.2.2022.1080p.WEBRip.AAC2.0.x264-SHITBOX/Sonic.the.Hedgehog.2.2022.1080p.WEBRip.AAC2.0.x264-SHITBOX.mp4" type="video/mp4">
-<track src="phim/Sonic.the.Hedgehog.2.2022.1080p.WEBRip.AAC2.0.x264-SHITBOX/Sonic.the.Hedgehog.2.2022.1080p.WEBRip.AAC2.0.x264-SHITBOX.vtt" kind="subtitles" srclang="VI" label="Tiếng Việt">
-</video> -->
+<track src="phim/Sonic.the.Hedgehog.2.2022.1080p.WEBRip.AAC2.0.x264-SHITBOX/Sonic.the.Hedgehog.2.2022.1080p.WEBRip.AAC2.0.x264-SHITBOX.srt" kind="subtitles" srclang="VI" label="Tiếng Việt">
+</video>
 <script type="text/javascript">
-  /* var player=videojs('my-video',{
+  var player=videojs('my-video',{
     playbackRates:[0.25,0.5,1,1.5,2],
     aspectRatio:'16:9',
     loop: false,
@@ -80,13 +82,14 @@ $dongchu="Xin chào";
  
 </script>
 
-<script type="text/javascript" src="video.min.js"></script>
-<script type="text/javascript" src="videojs.hotkeys.min.js"></script>
-<script type="text/javascript" src="videojs-mobile-ui.min.js"></script>
-<script type="text/javascript" src="videojs.zoomrotate.js"></script>
-<script src="videosub.js"></script>
-<script src="video-player.js"></script>
-<script type="text/javascript" src="zoom.js"></script>
+<script type="text/javascript" src="js/video.min.js"></script>
+<script type="text/javascript" src="js/videojs.hotkeys.min.js"></script>
+<script type="text/javascript" src="js/videojs-mobile-ui.min.js"></script>
+<script type="text/javascript" src="js/videojs.zoomrotate.js"></script>
+<script src="js/videosub.js"></script>
+<script src="js/video-player.js"></script>
+<script type="text/javascript" src="js/zoom.js"></script>
+
 
   </body>
 </html>
