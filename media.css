@@ -1,0 +1,105 @@
+.menu{
+    display: none;
+    position: relative;
+    cursor: pointer;
+    height: fit-content;
+    padding-top: 8px;
+    left: -10px;
+    
+}
+html{
+    font-size: 0.9rem;
+}
+.cacmenu{
+    z-index: 5;
+    display:none;
+    position: absolute;
+    right: 0;
+    width: auto !important;
+    line-height: 30px;
+    text-align: center;
+}
+/* .video-js{
+    width: 100% !important;
+    padding-top: 56.25% !important;
+    height: auto !important;
+} */
+.vjs-text-track-display{
+    transform: none !important;
+}
+.vjs-control-bar {
+    font-size: smaller;
+    width: -webkit-fill-available !important;
+}
+.ftimkiem button{
+    background: url(https://static.vecteezy.com/system/resources/previews/000/439/746/non_2x/vector-find-icon.jpg) left top;
+    background-size: contain;width: 30px;
+    border: none;
+    height: 30px;
+    font-size: 0px;
+    border-radius: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .clsvideo{
+        width: 100%;
+        display: inline-flex;
+    }
+    
+    .imginfophim > .picnew{
+        display: block;
+    }
+    /* .my-video-dimensions {
+    width: 100%;
+    height: auto;
+     
+    }*/
+    
+    .imginfophim {
+        position: relative;
+        width: fit-content;
+        width: 30vw;
+        height: 40vw;
+        float: left;
+    }
+    .imginfophim > .picnew {
+        width: inherit;
+        height: inherit;
+    }
+    .infophim {
+        width: auto;
+        /* width: 500px; */
+    }
+    .btn-themphim,.btn-suaphim,.btn-themtheloai{
+        display: none;
+    }
+    .menu{
+        display: block !important;
+    }
+    /* .menu:active .cacmenu{
+    display: block !important;
+    z-index: 100;
+    } */
+    .bdm>.hovertheloai {
+        width: 220px;
+    }
+    .bdm:hover .hovertheloai{display: none}
+    .ftimkiem{
+        display: inline-flex;
+    }
+    .ftimkiem input{
+        width: auto !important;
+    }
+    .ftimkiem button{
+        margin: 16px 0 0 10px !important;
+        background: url(https://static.vecteezy.com/system/resources/previews/000/439/746/non_2x/vector-find-icon.jpg) left top;
+        background-size: contain;width: 30px;
+        border: none;
+        height: 30px;
+        font-size: 0px;
+        border-radius: 20px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+}
