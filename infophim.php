@@ -10,14 +10,14 @@
 	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta charset="utf8">
     <title>jkj</title>
-    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
 	<!-- <script src="sub.js"></script> -->
-	<link href="media.css" rel="stylesheet">
-	<link href="video-js.min.css" rel="stylesheet">
+	<link href="css/media.css" rel="stylesheet">
+	<link href="css/video-js.min.css" rel="stylesheet">
 	
     
-    <link rel="stylesheet" href="videojs-mobile-ui.css">
-	<link rel="stylesheet" href="forest.css">
+    <link rel="stylesheet" href="css/videojs-mobile-ui.css">
+	<link rel="stylesheet" href="css/forest.css">
 	<!-- <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet"> -->
 	
 	<style type="text/css">
@@ -189,11 +189,11 @@
 				
 		
 	</script>
-	<script src="video.min.js"></script>
-	<script src="videojs.hotkeys.min.js"></script>
-	<script src="videojs-mobile-ui.min.js"></script>
-	<script src="videojs.zoomrotate.js"></script>
-	<script src="zoom.js"></script>
-	<script src="video-player.js"></script>
+	<script src="js/video.min.js"></script>
+	<script src="js/videojs.hotkeys.min.js"></script>
+	<script src="js/videojs-mobile-ui.min.js"></script>
+	<script src="js/videojs.zoomrotate.js"></script>
+	<script src="js/zoom.js"></script>
+	<script src="js/video-player.js"></script>
 </body>
 </html>

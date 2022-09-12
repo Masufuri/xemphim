@@ -4,8 +4,8 @@
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 	<meta charset="utf-8">
 	<title>hello</title>
-	<link href="media.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css.css">
+	<link href="css/media.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
 </head>
 <body>
 	<style>
