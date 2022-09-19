@@ -14,7 +14,7 @@
 	<!-- <script src="sub.js"></script> -->
 	<link href="css/media.css" rel="stylesheet">
 	<link href="css/video-js.min.css" rel="stylesheet">
-	
+	<link rel="stylesheet" type="text/css" href="css/css.css">
     
     <link rel="stylesheet" href="css/videojs-mobile-ui.css">
 	<link rel="stylesheet" href="css/forest.css">
