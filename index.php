@@ -4,6 +4,20 @@
 	$phim=$getdata->dsphim();
 	include('header.php');
 ?>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+				<?php
+					foreach($phim as $l){
+						if(strlen($l['name'])>15)$chamchamcham=substr_replace($l['name'],"...",15);else $chamchamcham=$l['name'];
+					echo "<div class='swiper-slide'><a href='infophim.php?id=".$l['maphim']."'><img class='pichot' src='".$l['picture']."'><br><span class='title-phim-hot'>".$l['name']."</span></a></div>";}
+				?>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
 
 		<div class="hot">
 			<h1>Phim hot</h1>
@@ -27,6 +41,25 @@
 			</div>
 		</div>
 		<div class="clr"></div>
+		<style>
+			
+		</style>
+		
+		
+
+		<!-- Swiper JS -->
+		
+
+		<!-- Initialize Swiper -->
+		<script>
+		var swiper = new Swiper(".mySwiper", {
+			loop:true,
+			navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+			},
+		});
+		</script>
 		<div class="new">
 			<h1>Phim mới cập nhật</h1>
 			<div class="cacpicnew">
