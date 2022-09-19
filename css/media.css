@@ -9,6 +9,7 @@
 }
 html{
     font-size: 0.9rem;
+    -webkit-tap-highlight-color: transparent;
 }
 .cacmenu{
     z-index: 5;
