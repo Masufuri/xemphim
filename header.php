@@ -92,7 +92,7 @@
 			// window width is less than 480px
 		} */
 
-		var x = window.matchMedia("(max-width: 600px)");
+		var x = window.matchMedia("(max-width: 700px)");
 		myFunction(x); // Call listener function at run time
 		x.addListener(myFunction);
 		

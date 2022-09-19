@@ -9,7 +9,7 @@
 }
 html{
     font-size: 0.9rem;
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent !important;
 }
 .cacmenu{
     z-index: 5;
@@ -114,7 +114,7 @@ body {
     margin-top: 0 !important;
 }
 /* Hết */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .clsvideo{
         width: 100%;
         display: inline-flex;
@@ -132,13 +132,13 @@ body {
     .imginfophim {
         position: relative;
         width: fit-content;
-        width: 30vw;
+        width: 30vw !important;
         height: 40vw;
         float: left;
     }
     .imginfophim > .picnew {
-        width: inherit;
-        height: inherit;
+        width: inherit !important;
+        height: inherit !important;
     }
     .infophim {
         width: auto;
@@ -160,17 +160,20 @@ body {
     .bdm:hover .hovertheloai{display: none}
     .ftimkiem{
         display: inline-flex;
+        width: -webkit-fill-available;
     }
     .ftimkiem input{
-        width: auto !important;
+        width: 100% !important;
     }
     .ftimkiem button{
         margin: 16px 0 0 10px !important;
         background: url(https://static.vecteezy.com/system/resources/previews/000/439/746/non_2x/vector-find-icon.jpg) left top;
-        background-size: contain;width: 30px;
+        background-size: cover;
+        width: 30px;
         border: none;
         height: 30px;
-        font-size: 0px;
+        font-size: inherit;
+        color: transparent;
         border-radius: 20px;
         vertical-align: middle;
         cursor: pointer;

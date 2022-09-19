@@ -43,7 +43,7 @@
 			<a class="btn-themtheloai" href="themtheloai.php">Thêm thể loại</a>&emsp;
 			<a class="btn-suaphim" href="suaphim.php?id=<?php echo $e['maphim'];?>">Sửa phim</a>
 			
-			<div onmouseleave="nhaclk(x,'cacmenu')" onclick="clk(x,'cacmenu')" class="menu">
+			<div onmouseleave="nhaclk(x,'cacmenu')" onclick="clk(x,'cacmenu')" class="menu" style="margin-left: -6px;">
 				<a class="img-menu"><img class="cls-menu" src="icon/menu.png"></a>
 				<div class="cacmenu hovertheloai" id="cacmenu">
 					<a href="themphim.php" class="menunho">Thêm phim</a>
