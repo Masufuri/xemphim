@@ -2,6 +2,8 @@
 	include('control.php');
 	$getdata=new data;
 	$phim=$getdata->dsphim();
+	$top10phim=$getdata->topluotxem(10);
+	$top5phim=$getdata->topluotxem(5);
 	include('header.php');
 ?>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
@@ -10,7 +12,7 @@
 		<div class="swiper mySwiper">
 			<div class="swiper-wrapper">
 				<?php
-					foreach($phim as $l){
+					foreach($top5phim as $l){
 						if(strlen($l['name'])>15)$chamchamcham=substr_replace($l['name'],"...",15);else $chamchamcham=$l['name'];
 					echo "<div class='swiper-slide'><a href='infophim.php?id=".$l['maphim']."'><img class='pichot' src='".$l['picture']."'><br><span class='title-phim-hot'>".$l['name']."</span></a></div>";}
 				?>
@@ -24,7 +26,7 @@
 			<div class="cacpichot">
 				<?php
 					//echo end($phim['maphim']);
-					foreach($phim as $i){
+					foreach($top10phim as $i){
 						if(strlen($i['name'])>15)$chamchamcham=substr_replace($i['name'],"...",15);else $chamchamcham=$i['name'];
 					echo "<div class='divpichot'><a href='infophim.php?id=".$i['maphim']."'><img class='pichot' src='".$i['picture']."'><br><span class='title-phim-hot'>".$chamchamcham."</span></a></div>";}
 				?>

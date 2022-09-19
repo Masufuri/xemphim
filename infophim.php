@@ -3,6 +3,9 @@
     $getdata=new data;
     $infophim=$getdata->infophim($_GET['id']);
 	foreach($infophim as $e);
+	global $conn;
+	$sql="update phim set view=view+1 where maphim=".$_GET['id'];
+	$run=mysqli_query($conn,$sql);
 ?>
 <!doctype html>
 <html>
@@ -94,7 +97,7 @@
 		?>
 		<div class="form_margin_top_10px">
 			<div class="clsvideo">
-			<video preload="auto" playsinline controls="true" id="my-video" class="video-js vjs-theme-forest vjs-big-play-centered vjs-fill" data-setup="{}">
+			<video controls preload="none" playsinline controls="true" id="my-video" class="video-js vjs-theme-forest vjs-big-play-centered vjs-fill" data-setup="{}">
 				<source src="<?php echo $e['phim'];?>" type="video/mp4">
 				<track src="<?php echo $sub?>.vtt" kind="subtitles" srclang="us" label="Tiếng Việt"/>
 			</video>

@@ -26,6 +26,13 @@
             $run=mysqli_query($conn,$sql);
             return $run;
         }
+		public function topluotxem($top){
+			global $conn;
+			if($top==10)$sql="select * from phim order by view desc limit 10";
+			else $sql="select * from phim order by view desc limit 5";
+			$run=mysqli_query($conn,$sql);
+			return $run;
+		}
         public function infophim($id)
         {
             global $conn;

@@ -178,4 +178,7 @@ body {
         vertical-align: middle;
         cursor: pointer;
     }
+    .cacpichot::-webkit-scrollbar {
+        display: none;
+    }
 }
