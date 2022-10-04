@@ -8,15 +8,16 @@ a{text-decoration: none;color: black;height: fit-content;}
 .top{height: 70px;display: flex}
 
 .danhmuc{height: 30px;display: inline-flex;width: 100%;padding-bottom: 5px;}
-.bdm{margin: auto;text-align: center;position: relative;display: inline-table;width: 20%;height: 100%;line-height: 30px;box-shadow: 1px 1px 2px}
+.bdm{margin: auto;text-align: center;position: relative;display: inline-table;width: 20%;height: 100%;line-height: 30px;/* box-shadow: 1px 1px 2px */}
 .bdm > a{display: block;text-decoration: none;color: black;}
 /*hover danh muc*/
 .bdm:hover > a{background-color: #EBEBF4;}
-.hovertheloai{display: none;position: absolute;background-color: #D5FFD5;width: 440px;box-shadow: 1px 1px 1px}
+.hovertheloai{/* display: none; */position: absolute;background-color: #b8b8ff;width: 440px;height: auto;visibility: hidden;opacity: 0;transition: opacity 0.3s,visibility 0.3s;z-index: 2;/* box-shadow: 1px 1px 1px */}
 #hovertheloai-nam{right: 0px}
-.bdm:hover .hovertheloai{display: block;z-index: 10;margin: auto}
-.menunho{width: 110px;text-decoration: none;color: black;float: left;box-shadow: 1px 1px 1px;background-color: #0000ff3d;}
-.menunho:hover{background-color: coral}
+.bdm:hover .hovertheloai{display: block;z-index: 2;margin: auto;visibility: visible;opacity: 1;}
+/* .bdm:hover .menunho{opacity: 1;} */
+.menunho{width: 110px;text-decoration: none;color: black;float: left;/* box-shadow: 1px 1px 1px */;/*background-color: #cacaff; transition: opacity 0.3s;opacity: 0; */}
+.menunho:hover{/* background-color: coral */color:blue;}
 
 .hot{float: left;width: 100%;}
 .cacpichot{display: flex;width: fit-content;height: fit-content;max-width: 90%;overflow: auto;margin: auto;}

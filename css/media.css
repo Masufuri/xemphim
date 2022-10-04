@@ -19,6 +19,8 @@ html{
     width: auto !important;
     line-height: 30px;
     text-align: center;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 /* .video-js{
     width: 100% !important;
